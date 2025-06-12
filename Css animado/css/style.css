@@ -1,0 +1,62 @@
+.louquinho {
+    height: 250px;
+    width: 250px;
+    background: #000000;
+    animation-name: loucura;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.easeout {
+    animation: correr 2s ease-out;
+    background: red;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.easeinout {
+    animation: correr 2s ease-in-out;
+    background: purple;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes correr {
+
+    from {
+        transform: translateX(0) translateY(0);
+    }
+
+    to {
+        transform: translateX(1000px) translateY(0);
+    }
+
+}
+
+@keyframes loucura {
+    0%{
+      position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        position: absolute;
+        top: 0px;
+        right: 500px;
+    }
+
+    50%{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    100%{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
