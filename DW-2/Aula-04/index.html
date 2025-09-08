@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Super aula</title>
+</head>
+<body>
+        <h1> Entrada, processamento e saída</h1>
+
+    <form id="nomes" action="" method="GET">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Entre com seu nome" tabindex="1">
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" id="sobrenome" placeholder="Entre seu sobrenome" tabindex="2">
+
+    </form>
+
+    <button id="juntar" onclick="juntarNome()" tabindex="3"> Juntar </button>
+
+    <p> Nome Completo: </p>
+    <p id="nomeCompleto">vai aparecer o nome completo</p>
+
+    <script src="js/utilidades.js"></script>
+</body>
+</html>
