@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF somente - Javascript</title>
+    <style>
+        #resposta {
+            font: solid border 16px bold;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>IF somente - Javascript</h1>
+    
+    <form onsubmit="verificarIdade()">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required>
+        <input type="submit" value="Verificar">
+    </form>
+    
+    <p>Você é considerado um:</p>
+    <p id="resposta"></p>
+    
+    <script>
+        function verificarIdade() {
+
+            let idade = document.getElementById("idade").value;
+            let resposta = document.getElementById("resposta");
+
+            if (idade >= 18) {
+                resposta.textContent = "Você é maior de idade";
+            } else {
+                resposta.textContent = "Você é menor de idade";
+            }
+        }
+    </script>
+</body>
+
+</html>
